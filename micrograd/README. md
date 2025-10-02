@@ -1,0 +1,21 @@
+# Micrograd - Based on Andrej Karpathy's "makemore" repo
+
+A minimal implementation of a scalar-valued autograd engine and neural network library, inspired by Andrej Karpathy's course.
+
+## What is Micrograd?
+
+Micrograd implements automatic differentiation (backpropagation) for scalar values, allowing you to build and train neural networks from scratch. It's educational and demonstrates the core concepts behind libraries like PyTorch.
+
+## Features
+
+- **Autograd Engine** (`engine.py`): Scalar-valued automatic differentiation with reverse-mode backpropagation
+- **Neural Network Layers** (`nn.py`): Building blocks including `Neuron`, `Layer`, and `MLP` (Multi-Layer Perceptron)
+- **Graph Visualization** (`graph_vis.py`): Tools to visualize computation graphs
+- **Interactive Demo** (`demo.ipynb`): Binary classification example on the moons dataset
+
+## How It Works
+
+1. **Value Objects**: Wrap scalars and track operations
+2. **Computation Graph**: Automatically built during forward pass
+3. **Backpropagation**: Gradients computed via chain rule in reverse topological order
+4. **Neural Networks**: Composed of simple `Neuron` units with tanh activation

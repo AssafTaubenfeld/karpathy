@@ -1,1 +1,0 @@
-This is implementation of the videos of andrej karpaty https://www.youtube.com/watch?v=VMj-3S1tku0&t=3s
